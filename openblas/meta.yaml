@@ -1,22 +1,26 @@
 package:
   name: openblas
-  version: 0.2.14
+  version: 0.2.15
 
 source:
-  fn: openblas-0.2.14.tgz
-  url: http://github.com/xianyi/OpenBLAS/tarball/v0.2.14
-  md5: d340dc3d8a03f549ae29488d737b9c30
+  fn: openblas-0.2.15.tgz
+  url: http://github.com/xianyi/OpenBLAS/tarball/v0.2.15
+  sha1: b9b53c644bcd31dfed7176f8c78654f482bc4845 
 
 build:
-  number: 2
+  number: 0
 
   track_features:
     - openblas
 
 requirements:
+  build:
+    - gcc
   run:
     - libgcc
 
 about:
   home: http://xianyi.github.io/OpenBLAS/
   license: BSD
+  summary: An optimized BLAS library
+
